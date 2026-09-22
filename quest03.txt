@@ -1,0 +1,20 @@
+Considere o trecho de código abaixo e responda as questões:
+
+
+var arrayFuncoes = [];
+for(var i = 0; i < 10; i++){
+	arrayFuncoes.push(function(){
+		console.log(i);
+	});
+}
+arrayFuncoes.forEach(function(funcao){
+	funcao();
+});
+
+
+a) Quais os valores são exibidos no console na execução desse
+código?
+Resposta: O código imprime o número 10 dez vezes devido ao uso de variáveis globais.
+
+b) Como podemos ajustar o comportamento desta função utilizando ES6?
+Resposta: Fazendo o uso de ES6, podemos simplesmente substituir o "var" pelo "let", fazendo com que sejam impressos os números de 0 até 9.

@@ -1,0 +1,12 @@
+Uma jovem programadora pensou que havia entendido como funcionava a declaração de variáveis com let e const até ver o seguinte trecho de código:
+
+
+const jogador = {};
+jogador.nome = 'Rodrigo';
+jogador.idade = 33;
+console.log(jogador.nome + '_' + jogador.idade); // saída:
+
+
+Ela achou que este código não funcionaria, pois havia entendido que não era possível colocar novos valores em variáveis declaradas com const. Por que este código funciona sem problemas?
+
+Resposta: o código funciona pela programadora não estar alterando conteúdos de variáveis. Ela apenas insere atributos. Se, depois de definir a idade do jogador, ela definir novamente, aparecerá um erro. A palavra reservada "const" impede a reatribuição de variáveis, mas, a mutação do conteúdo é permitida.
